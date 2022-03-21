@@ -1,0 +1,58 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    height: 800px;
+    margin: 50px auto;
+}
+
+.row{
+    height: 100%;
+}
+
+#contact-list{
+    border: 1px solid black;
+}
+
+#chat{
+    border: 1px solid black;
+}
+
+#my-avatar{
+    height: 60px;
+    border-radius: 50%;
+}
+
+#notifiche{
+    height: 80px;
+}
+
+.my-bg-gray{
+    background-color: #eaeaea;
+}
+
+.my-bg-light-blue{
+    background-color: #8edafc;
+}
+
+.my-color-light-blue{
+    color: #8edafc;
+}
+
+#logo-notifica{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#chat-list li{
+    list-style: none;
+    border-top: 1px solid #eaeaea;
+}
+
+#chat-list li img {
+    height: 70px;
+    border-radius: 50%;
+}
