@@ -1,7 +1,7 @@
 const app = new Vue({
     el:'#app',
     data:{
-        activeChat : 0,
+        activeChat : "",
         contacts: [
             {
                 name: 'Michele',
@@ -28,7 +28,7 @@ const app = new Vue({
             {
                 name: 'Fabio',
                 avatar: '_2',
-                visible: true,
+                visible: false,
                 messages: [
                     {
                         date: '20/03/2020 16:30:00',

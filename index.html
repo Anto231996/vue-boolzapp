@@ -57,7 +57,7 @@
                 <ul class="m-0 p-0">
                     <li class="d-flex align-items-center p-2" v-for="(element, index) in contacts" :class="(index === activeChat) ? 'active' : ''"
                     @click="changeChat(index)">
-                        <img class="rounded-circle" :src="'img/avatar'+ element.avatar + '.jpg'"/>
+                        <img class="rounded-circle" :src="'img/avatar'+ element.avatar + '.jpg'" alt="">
                         <div class="ms-2">
                             <h5>{{element.name}}</h5>
                             <h6>Ultimo messaggio inviato</h6>
@@ -83,13 +83,15 @@
                 </header>
 
                 <main>
-                    
+                    <div class="row p-5">
+<!--                         <p class="col-7 receiver mb-2"></p>
+                        <p class="col-7 offset-5 sender mb-2"></p> -->
+                    </div>
                 </main>
 
                 <div id="reply-box" class="input-group input-group-sm p-2 my-bg-gray">
                     <input type="text" class="form-control" placeholder="Scrivi un messaggio">
                 </div>
-
             </section>
         </div>
     </div>
