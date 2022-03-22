@@ -3,19 +3,71 @@ body{
     background-color: antiquewhite;
 }
 
-div.container#app{
+div.container{
     min-width: 960px;
     margin: 50px auto;
 }
 
-div.container#app .row{
+div.container div.row{
     background-color: white;
 }
 
-#contact-list img, 
-#chat-list li img, 
-#chat img{
+img{
     height: 50px;
+}
+
+ul{
+    overflow-y: scroll;
+}
+
+ul li{
+    list-style: none;
+    border-top: 1px solid #eaeaea;
+    cursor: pointer;
+}
+
+ul li.active{
+    background-color: #eaeaea;
+}
+
+ul li:hover{
+    background-color: #eaeaea;
+}
+
+section#chat h5, 
+ul h5{
+    font-size: 15px;
+}
+
+section#chat h6, 
+ul h6{
+    font-size: 12px;
+    color: gray;
+}
+
+section#contact-list header{
+    border-right: 1px solid rgb(210, 210, 210);
+}
+
+section#contact-list header, 
+section#chat header{
+    height: 70px;
+}
+
+section#chat main{
+    height: calc(100% - 130px);
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+}
+
+section#chat div#reply-box{
+    height: 60px;
+}
+
+#logo-notifica{
+    width: 50px;
+    height: 50px;
+    background-color: white;
 }
 
 .my-bg-gray{
@@ -28,54 +80,4 @@ div.container#app .row{
 
 .my-color-light-blue{
     color: #8edafc;
-}
-
-#logo-notifica{
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    border-radius: 50%;
-}
-
-#chat-list li{
-    list-style: none;
-    border-top: 1px solid #eaeaea;
-}
-
-#chat-list li.active{
-    background-color: #eaeaea;
-}
-
-#chat-list li:hover{
-    background-color: #eaeaea;
-}
-
-#chat h5, 
-#chat-list h5{
-    font-size: 15px;
-}
-
-#chat h6, 
-#chat-list h6{
-    font-size: 12px;
-    color: gray;
-}
-
-#contact-list header{
-    border-right: 1px solid rgb(210, 210, 210);
-}
-
-#contact-list header, 
-#chat header{
-    height: 70px;
-}
-
-#chat main{
-    height: calc(100% - 130px);
-    background-image: url(../img/mine.jpg);
-    overflow-y: scroll;
-}
-
-#chat #reply-box{
-    height: 60px;
 }
