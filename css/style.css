@@ -1,31 +1,21 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: antiquewhite;
 }
 
-.container{
-    height: 800px;
+div.container#app{
+    min-width: 960px;
     margin: 50px auto;
 }
 
-.row{
-    height: 100%;
+div.container#app .row{
+    background-color: white;
 }
 
-#contact-list{
-    border: 1px solid black;
-}
-
-#chat{
-    border: 1px solid black;
-}
-
-#my-avatar{
-    height: 60px;
-    border-radius: 50%;
-}
-
-#notifiche{
-    height: 80px;
+#contact-list img, 
+#chat-list li img, 
+#chat img{
+    height: 50px;
 }
 
 .my-bg-gray{
@@ -52,7 +42,40 @@ body{
     border-top: 1px solid #eaeaea;
 }
 
-#chat-list li img {
+#chat-list li.active{
+    background-color: #eaeaea;
+}
+
+#chat-list li:hover{
+    background-color: #ececec;
+}
+
+#chat h5, 
+#chat-list h5{
+    font-size: 15px;
+}
+
+#chat h6, 
+#chat-list h6{
+    font-size: 12px;
+    color: gray;
+}
+
+#contact-list header{
+    border-right: 1px solid rgb(210, 210, 210);
+}
+
+#contact-list header, 
+#chat header{
     height: 70px;
-    border-radius: 50%;
+}
+
+#chat main{
+    height: calc(100% - 130px);
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+}
+
+#chat #reply-box{
+    height: 60px;
 }
