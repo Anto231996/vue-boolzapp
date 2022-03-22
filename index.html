@@ -46,7 +46,7 @@
                     </div>
                     <div class="ms-2">
                         <h6>Ricevi notifiche di nuovi messaggi</h6>
-                        <h6 class="text-decoration-underline">Attiva notifiche desktop</h6>
+                        <h6 class="text-decoration-underline text-secondary">Attiva notifiche desktop</h6>
                     </div>
                 </div>
                 
@@ -56,7 +56,7 @@
                 
                 <ul id="chat-list" class="p-0">
                     <li class="d-flex align-items-center p-2" v-for="(element, index) in contacts">
-                        <img class="rounded-circle" src="img/avatar_1.jpg" alt="">
+                        <img class="rounded-circle" :src="'img/avatar'+ element.avatar + '.jpg'"/>
                         <div class="ms-2">
                             <h5>{{element.name}}</h5>
                             <h6>Ultimo messaggio inviato</h6>
