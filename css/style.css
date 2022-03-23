@@ -76,16 +76,17 @@ section#chat div#reply-box{
     color: #8edafc;
 }
 
-.sender {
-    float: right ;
-    background: #dcf8c6;
-    border-radius: 10px 10px 0 10px;
+.message{
     padding: 4px 10px 7px;
 }
 
-.receiver {
-    padding: 4px 10px 7px ;
-    border-radius: 10px 10px 10px 0;
+.sent {
+    background: #dcf8c6;
+    border-radius: 10px 10px 0 10px;
+}
+
+.received {
     background: #ffffff;
-    display: inline-block
+    border-radius: 10px 10px 10px 0;
+    align-self: flex-start
 }

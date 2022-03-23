@@ -1,7 +1,7 @@
 const app = new Vue({
     el:'#app',
     data:{
-        activeChat : "",
+        activeChat : 0,
         contacts: [
             {
                 name: 'Michele',

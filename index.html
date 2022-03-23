@@ -83,9 +83,8 @@
                 </header>
 
                 <main>
-                    <div class="row p-5">
-<!--                         <p class="col-7 receiver mb-2"></p>
-                        <p class="col-7 offset-5 sender mb-2"></p> -->
+                    <div class="d-flex flex-column align-items-end p-4">
+                        <p class="message mb-2" v-for="message in contacts[activeChat].messages" :class="(message.status == 'received') ? 'received' : 'sent' ">{{message.message}}</p>
                     </div>
                 </main>
 
