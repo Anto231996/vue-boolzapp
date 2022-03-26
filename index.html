@@ -89,7 +89,8 @@
                 </main>
 
                 <div id="reply-box" class="input-group input-group-sm p-2 my-bg-gray">
-                    <input type="text" class="form-control" placeholder="Scrivi un messaggio">
+                    <input type="text" class="form-control" placeholder="Scrivi un messaggio" v-model="newMessageContent"
+                    @keyup.enter="sendNewMessage(contacts, activeChat, newMessageContent)">>
                 </div>
             </section>
         </div>

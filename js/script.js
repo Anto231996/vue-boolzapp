@@ -2,6 +2,9 @@ const app = new Vue({
     el:'#app',
     data:{
         activeChat : 0,
+
+        newMessageContent : '',
+
         contacts: [
             {
                 name: 'Michele',
@@ -177,6 +180,22 @@ const app = new Vue({
                 console.warn(""); 
             }  
         },
+
+        sendNewMessage(contacts, index, messageContent){
+            const newMessage = {
+                message: messageContent,
+                status: 'sent'
+            };
+
+            if (messageContent.trim() != ''){
+                contacts[index].messages.push(newMessage);
+                this.clearMessageInput();
+            }
+        },
+
+          clearMessageInput(){
+            this.newMessageContent = '';
+        }
     }
 
 })
