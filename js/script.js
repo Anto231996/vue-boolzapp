@@ -172,10 +172,10 @@ const app = new Vue({
     },
     
     methods: {
-       
+
         changeChat(index){
             if ( this.contacts[index] !== undefined ){
-             this.activeChat = index;
+                this.activeChat = index;
             } else {
                 console.warn(""); 
             }  
@@ -193,7 +193,7 @@ const app = new Vue({
             }
         },
 
-          clearMessageInput(){
+        clearMessageInput(){
             this.newMessageContent = '';
         }
     }
